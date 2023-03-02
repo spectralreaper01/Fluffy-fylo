@@ -1,0 +1,391 @@
+/** @format */
+
+:root {
+    --dark-blue1: hsl(217, 28%, 15%);
+    --dark-blue2: hsl(218, 28%, 13%);
+    --dark-blue3: hsl(216, 53%, 9%);
+    --dark-blue4: hsl(219, 30%, 18%);
+    --cyan: hsl(176, 68%, 64%);
+    --blue: hsl(198, 60%, 50%);
+    --light-red: hsl(0, 100%, 63%);
+    --white: hsl(0, 0%, 100%);
+  }
+  
+  body {
+    background-color: var(--dark-blue1);
+  }
+  
+  nav a {
+    color: var(--white);
+    text-decoration: none;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 40%;
+    align-items: center;
+    margin: 30px 20px;
+  }
+  
+  /* nav img {
+    flex: 1;
+  } */
+  nav img{
+    width: 100px;
+  }
+  
+  nav div {
+    flex: 3;
+  }
+  
+  /* nav {
+      display: grid;
+      grid-template-columns:  1fr 3fr;
+  } */
+  
+  nav div {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  /* section */
+  .section1 img{
+    width: 90%;
+    max-width: 400px;
+  }
+  .section1{
+    background-image: url("./images/bg-curvy-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .section1 div{
+    color: var(--white);
+    text-align: center;
+    max-width: 500px;
+    margin: 0px auto;
+  }
+  .section1 button{
+    width: 200px;
+    padding: 10px;
+    background-color: var(--blue);
+    color: var(--white);
+    border-radius: 20px;
+    border: 0px;
+  }
+  .section1 button:hover{
+    background-color: var(--cyan);
+   
+  }
+  @media (min-width: 768px) {
+    .section1{
+      background-image: url("./images/bg-curvy-desktop.svg");
+    }
+  }
+
+  /* ============section2============ */
+
+  .section2{
+    background-color: var(--dark-blue2);
+    padding: 60px o;
+    padding-top: 50px;
+  
+  }
+
+  .section2>div{
+    background-color: var(--dark-blue2);
+    color: var(--white);
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 600px;
+    /* padding: 50px auto; */
+    margin: 0 auto ;
+    gap: 30px;
+    line-height: 1.5rem;
+    font-size: 1.2rem;
+    
+  }
+  @media (min-width: 768px){
+    .section2>div{
+      grid-template-columns: 1fr 2fr;
+    }
+   
+  }
+
+  .section2>div{
+    text-align: center;
+    padding: 10px 20px;
+  }
+  
+
+  /* ====section3=== */
+
+  .section3{
+    background-color: var(--dark-blue2);
+    padding: 60px;
+    
+  }
+  .section3>div{
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    gap: 50px;
+    margin: 50px 40px;
+    /* display: grid; */
+    /* grid-template-columns: 1fr 1fr; */
+
+
+  }
+  .text h1{
+    color: var(--white);
+  }
+  .text p{
+    color: var(--white);
+  }
+  .text a{
+    color: var(--cyan);
+  }
+  .image-sec3{
+    width: 50%;
+  
+  }
+  /* @media (min-width: 768px){
+    .section3>div{
+      grid-template-columns: 1fr 1fr;
+    }
+   
+  }
+
+  .section3>div{
+    text-align: center;
+    padding: 10px 20px;
+  } */
+
+  /* =====section4==== */
+
+  .section4{
+    background-color: var(--dark-blue2);
+    padding: 60px;
+    position: relative;
+    padding-bottom: 300px;
+  }
+
+  .majorbox{
+    position: relative;
+    z-index: 2;
+    display: flex;
+    column-gap: 40px;
+    margin: 0px 70px;
+  }
+
+  .profile1 p{
+    font-size: 0.5rem;
+
+  }
+  .profile2 p{
+    font-size: 0.5rem;
+
+  }
+  .profile3 p{
+    font-size: 0.5rem;
+
+  }
+
+
+
+
+  /* -----box1---- */
+
+  .box1{
+    background-color: var(--dark-blue4);
+    color: var(--white);
+    /* max-width: 500px; */
+    padding: 20px 20px;
+    width: 750px;
+    height: 180px;
+    border-radius: 5px 5px;
+  }
+  .p-text{
+    line-height: 1.4rem;
+    font-size: 1.1rem;
+  }
+  .profile1{
+    display: flex;
+    gap: 7px;
+    place-items: center;
+  }
+  .profile1 img{
+    width: 30px;
+    border-radius: 15px 15px;
+    
+  }
+  .txt{
+    line-height: 0.5rem;
+    font-size: 0.7rem;
+  }
+
+
+
+
+
+  /* -----box2----- */
+  .box2{
+    background-color: var(--dark-blue4);
+    color: var(--white);
+    /* max-width: 500px; */
+    padding: 20px 20px;
+    width: 750px;
+    height: 180px;
+    border-radius: 5px 5px;
+  }
+  .p-text{
+    line-height: 1.4rem;
+    font-size: 1.1rem;
+  }
+  .profile2{
+    display: flex;
+    gap: 7px;
+    align-items: center;
+    /* justify-content: space-between; */
+  }
+  .profile2 img{
+    width: 30px;
+    border-radius: 15px 15px;
+    
+  }
+  .txt{
+    line-height: 0.5rem;
+    font-size: 0.7rem;
+  }
+
+
+
+
+
+
+  /* -----box3---- */
+
+  .box3{
+    background-color: var(--dark-blue4);
+    color: var(--white);
+    /* max-width: 500px; */
+    padding: 20px 20px;
+    width: 750px;
+    height: 180px;
+    border-radius: 5px 5px;
+  }
+  .p-text{
+    line-height: 1.4rem;
+    font-size: 1.1rem;
+  }
+  .profile3{
+    display: flex;
+    gap: 7px;
+    align-items: center;
+    /* justify-content: space-between; */
+  }
+  .profile3 img{
+    width: 30px;
+    border-radius: 15px 15px;
+    
+  }
+  .txt{
+    line-height: 0.5rem;
+    font-size: 0.7rem;
+  }
+  .quote{
+    margin-left: 60px;
+    position: absolute;
+    top: 30px;
+    left: 50px;
+    z-index: 1 ;
+  }
+
+
+  /* --------footer-------- */
+
+  footer{
+    background-color: var(--dark-blue3);
+    color: var(--white);
+    position: relative;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    /* margin-top: 200px; */
+  }
+  .top-part{
+    padding: 20px 40px;
+    background-color: var(--dark-blue1);
+    width: 70%;
+    max-width: 800px;
+    height: 200px;
+    margin: 0 auto;
+    position: absolute;
+    top: -120px;
+    left: 0px;
+    right: 0px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  .top-part h3, .top-part p{
+    padding-bottom: 20px;
+
+  }
+  .top-part input{
+    width: 60%;
+    padding: 12px 12px;
+    border-radius: 30px;
+    border: none;
+  }
+  .top-part button{
+    width: 20%;
+    padding: 12px 12px;
+    border-radius: 30px;
+    border: none;
+    background-color: var(--cyan);
+    color: var(--white);
+    
+  }
+  .top-part button:hover{
+    background-color: var(--blue);
+  }
+  .bottom-part{
+    display: flex;
+    padding: 60px;
+
+  }
+  .foot1{
+    width: 30%;
+    padding: 30px;
+  }
+  .foot2{
+    width: 25%;
+    padding: 30px;
+  }
+  .foot3{
+    width: 20%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+  }
+  .foot3 a{
+    color: var(--white);
+  }
+  .foot4{
+    width: 20%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .foot4 a{
+    color: var(--white);
+  }
+  .foot5{
+    width: 10%;
+    padding: 30px;
+  }
+  
+
+
